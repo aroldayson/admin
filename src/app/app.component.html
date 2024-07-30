@@ -1,34 +1,59 @@
+<div id="mySidenav" class="sidenav" [ngClass]="{'open': isOpen}">
+   <div class="logo-container">
+      <img src="./group4.jpg" alt="Logo" class="logo">
+   </div>
+   <a href="#" class="menu-item">
+     <i class="fas fa-tachometer-alt"></i> Dashboard
+   </a>
+   <a href="#" class="menu-item">
+     <i class="fas fa-tags"></i> Price Management
+   </a>
+   <a href="#" class="menu-item">
+     <i class="fas fa-file-alt"></i> Reports
+   </a>
+   <a href="#" class="menu-item">
+     <i class="fas fa-users"></i> Staff
+   </a>
+ </div>
+ 
 
-<div class="jumbotron">
-<div class="row w-100">
-        <div class="col-md-3">
-            <div class="card border-info mx-sm-1 p-3">
-                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-money" aria-hidden="true"></span></div>
-                <div class="text-info text-center mt-3"><h4>Today's income</h4></div>
-                <div class="text-info text-center mt-2"><h1>234</h1></div>
-                <div class="text-info text-center mt-2"><h1>123</h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-success mx-sm-1 p-3">
-                <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-money" aria-hidden="true"></span></div>
-                <div class="text-success text-center mt-3"><h4>Today's Received Transactions</h4></div>
-                <div class="text-success text-center mt-2"><h1>9332</h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-danger mx-sm-1 p-3">
-                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-money" aria-hidden="true"></span></div>
-                <div class="text-danger text-center mt-3"><h4>Today's Expenses</h4></div>
-                <div class="text-danger text-center mt-2"><h1>346</h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-warning mx-sm-1 p-3">
-                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-users" aria-hidden="true"></span></div>
-                <div class="text-warning text-center mt-3"><h4>Staff</h4></div>
-                <div class="text-warning text-center mt-2"><h1>346</h1></div>
-            </div>
-        </div>
-     </div>
+
+<div id="main" [ngStyle]="{'margin-left.px': isOpen ? 250 : 0}">
+   <span style="font-size:30px;cursor:pointer" (click)="toggleNav()">&#9776; Dashboard</span>
+   <p class="mx-4">....Welcome to Admin</p>
+   <div class="row w-100 mt-5">
+      <div class="col-md-3">
+          <div class="card border-info mx-sm-1 p-3">
+              <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-money" aria-hidden="true"></span></div>
+              <div class="text-info text-center mt-3"><h4>Today's income</h4></div>
+              <div class="text-info text-center mt-2"><h1>234</h1></div>
+              <div class="text-info text-center mt-2"><h1>123</h1></div>
+              <div class="text-info text-center mt-2"><h1>lolo mo</h1></div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card border-success mx-sm-1 p-3">
+              <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-money" aria-hidden="true"></span></div>
+              <div class="text-success text-center mt-3"><h4>Today's Received Transactions</h4></div>
+              <div class="text-success text-center mt-2"><h1>9332</h1></div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card border-danger mx-sm-1 p-3">
+              <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-money" aria-hidden="true"></span></div>
+              <div class="text-danger text-center mt-3"><h4>Today's Expenses</h4></div>
+              <div class="text-danger text-center mt-2"><h1>346</h1></div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card border-warning mx-sm-1 p-3">
+              <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-users" aria-hidden="true"></span></div>
+              <div class="text-warning text-center mt-3"><h4>Staff</h4></div>
+              <div class="text-warning text-center mt-2"><h1>346</h1></div>
+          </div>
+      </div>
+   </div>
 </div>
+
+ 
+ 
